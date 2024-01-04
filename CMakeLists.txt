@@ -11,7 +11,11 @@ set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")       # Disable optimizati
 
 include_directories(include)            # Add include directory
 file(GLOB SRC src/*.cpp include/*.h)    # Add source files
-add_executable(main ${SRC})             # Add executable
+add_executable(main ${SRC}
+        src/Menu.h
+        src/temp.h
+        Student.cpp
+        Student.h)             # Add executable
 
 # Copy compile_commands.json to project root
 add_custom_target(

@@ -43,9 +43,14 @@
  * \brief The main.cpp file contains the entry point of the program.
  */
 
+#include <iostream>
+#include <cstdlib>
+#include "Menu.h"
+using namespace std;
+
 int main() {
     system("clear");
-    std::cout << "Universidad Nacional de Costa Rica - www.mikeguzman.dev" << std::endl;
+    cout << "Universidad Nacional de Costa Rica" << endl;
 
     Menu menu;
     menu.handleUserInput();
